@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  color: #222b45;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2a5298;
+  font-weight: 700;
+}
+
+a, .navbar-brand, .nav-link {
+  color: #2a5298 !important;
+  transition: color 0.2s;
+}
+a:hover, .navbar-brand:hover, .nav-link:hover {
+  color: #1e3c72 !important;
+  text-decoration: underline;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%) !important;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.06);
+}
+.table-primary th {
+  background: #2a5298 !important;
+  color: #fff !important;
+}
+
+.btn, .btn-primary {
+  background: #2a5298;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: #1e3c72;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+  margin-bottom: 2rem;
+}
+
+/* Custom modal styling */
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background: #2a5298;
+  color: #fff;
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
