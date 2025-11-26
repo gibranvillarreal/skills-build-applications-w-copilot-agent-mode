@@ -14,7 +14,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
         <div className="container-fluid">
           <NavLink className="navbar-brand fw-bold d-flex align-items-center" to="/">
-            <img src="/docs/octofitapp-small.png" alt="OctoFit Logo" className="me-2" style={{height: '40px'}} />
+            <img src="/octofitapp-small.png" alt="OctoFit Logo" className="me-2" style={{height: '40px'}} />
             OctoFit Tracker
           </NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
