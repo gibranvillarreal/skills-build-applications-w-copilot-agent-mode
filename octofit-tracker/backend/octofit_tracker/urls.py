@@ -19,8 +19,15 @@ from django.urls import path, include
 from rest_framework import routers
 from . import views
 
+
+from .views import UserViewSet, TeamViewSet, ActivityViewSet, WorkoutViewSet, LeaderboardViewSet
+
 router = routers.DefaultRouter()
-# Register viewsets here later for users, teams, activities, leaderboard, workouts
+router.register(r'users', UserViewSet, basename='user')
+router.register(r'teams', TeamViewSet, basename='team')
+router.register(r'activities', ActivityViewSet, basename='activity')
+router.register(r'workouts', WorkoutViewSet, basename='workout')
+router.register(r'leaderboard', LeaderboardViewSet, basename='leaderboard')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
