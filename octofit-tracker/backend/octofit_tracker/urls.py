@@ -23,6 +23,7 @@ from . import views
 
 from .views import UserViewSet, TeamViewSet, ActivityViewSet, WorkoutViewSet, LeaderboardViewSet, api_root_with_codespace
 
+
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet, basename='user')
 router.register(r'teams', TeamViewSet, basename='team')
@@ -33,6 +34,6 @@ router.register(r'leaderboard', LeaderboardViewSet, basename='leaderboard')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('', api_root_with_codespace, name='api-root'),
+    path('', api_root_with_codespace, name='api-root'),  # Only the root uses Codespace URL logic
 ]
 
